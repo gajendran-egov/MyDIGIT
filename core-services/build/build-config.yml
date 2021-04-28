@@ -236,11 +236,6 @@ config:
     build:
       - work-dir: "libraries/enc-client"
         image-name: "enc-client"
-        
-  - name: "builds/core-services/libraries/tracer"
-    build:
-      - work-dir: "libraries/tracer"
-        image-name: "tracer"
 
   - name: "builds/core-services/nlp-engine"
     build:

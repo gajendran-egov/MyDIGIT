@@ -33,45 +33,45 @@ import lombok.Setter;
 @Setter
 public class FSM   {
   @JsonProperty("citizen")
-  private User citizen ;
+  private User citizen = null;
 
   @JsonProperty("id")
-  private String id ;
+  private String id = null;
 
   @NotNull
   @Size(min=2,max=64)
   @JsonProperty("tenantId")
-  private String tenantId ;
+  private String tenantId = null;
 
   @JsonProperty("applicationNo")
-  private String applicationNo ;
+  private String applicationNo = null;
 
   @JsonProperty("description")
-  private String description ;
+  private String description = null;
 
   @JsonProperty("accountId")
-  private String accountId ;
+  private String accountId = null;
 
   @JsonProperty("additionalDetails")
-  private Object additionalDetails ;
+  private Object additionalDetails = null;
 
   @JsonProperty("applicationStatus")
-  private String applicationStatus ;
+  private String applicationStatus = null;
 
   @JsonProperty("source")
-  private String source ;
+  private String source = null;
 
   @JsonProperty("sanitationtype")
-  private String sanitationtype ;
+  private String sanitationtype = null;
 
   @JsonProperty("propertyUsage")
-  private String propertyUsage ;
+  private String propertyUsage = null;
   
   @JsonProperty("vehicleType")
-  private String vehicleType ;
+  private String vehicleType = null;
 
   @JsonProperty("noOfTrips")
-  private Integer noOfTrips ;
+  private Integer noOfTrips = null;
 
   /**
    * Gets or Sets status
@@ -104,38 +104,38 @@ public class FSM   {
     }
   }
   @JsonProperty("status")
-  private StatusEnum status ;
+  private StatusEnum status = null;
 
   @JsonProperty("vehicleId")
-  private String vehicleId ;
+  private String vehicleId = null;
   
   @JsonProperty("vehicle")
-  private Vehicle vehicle ;
+  private Vehicle vehicle = null;
   
   @JsonProperty("dsoId")
-  private String dsoId ;
+  private String dsoId = null;
   
   @JsonProperty("dso")
-  private Vendor dso ;
+  private Vendor dso = null;
   
   @JsonProperty("possibleServiceDate")
-  private Long possibleServiceDate ;
+  private Long possibleServiceDate = null;
 
   @JsonProperty("pitDetail")
-  private PitDetail pitDetail ;
+  private PitDetail pitDetail = null;
 
   @Valid
   @JsonProperty("address")
-  private Address address;
+  private Address address = null;
 
   @JsonProperty("auditDetails")
-  private AuditDetails auditDetails ;
+  private AuditDetails auditDetails = null;
   
   @JsonProperty("wasteCollected")
-  private Double wasteCollected ;
+  private Double wasteCollected = null;
   
 
   @JsonProperty("completedOn")
-  private Long completedOn ;
+  private Long completedOn = null;
 
 }
